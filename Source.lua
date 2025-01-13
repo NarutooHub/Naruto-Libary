@@ -46,7 +46,7 @@ local redzlib = {
       ["Color Text"] = Color3.fromRGB(240, 240, 240),
       ["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
     },
-    Green = {
+    Orange = {
       ["Color Hub 1"] = ColorSequence.new({
         ColorSequenceKeypoint.new(0.00, Color3.fromRGB(19, 97, 61)),
         ColorSequenceKeypoint.new(0.50, Color3.fromRGB(19, 97, 61)),
@@ -66,7 +66,7 @@ local redzlib = {
   Save = {
     UISize = {434,247},
     TabSize = 160,
-    Theme = "Green"
+    Theme = "Orange"
   },
   Settings = {},
   Connection = {},
@@ -75,7 +75,7 @@ local redzlib = {
   Options = {},
   Flags = {},
   Tabs = {},
-  Icons = loadstring(game:HttpGet("https://raw.githubusercontent.com/Raelhub/Rael-hub-function/refs/heads/main/RedzLibaryVersionRaelHub/Icons.lua"))()
+  Icons = loadstring(game:HttpGet("https://raw.githubusercontent.com/NarutooHub/Naruto-Libary/refs/heads/main/Icons.lua"))()
 }
 
 local ViewportSize = workspace.CurrentCamera.ViewportSize

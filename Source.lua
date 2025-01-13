@@ -142,7 +142,7 @@ local SetProps, SetChildren, InsertTheme, Create do
     end
   end
   
-  pcall(Save, "rael hub with redz library.json")
+  pcall(Save, "naruto hub with redz library.json")
 end
 
 local Funcs = {} do
@@ -284,7 +284,7 @@ local GetFlag, SetFlag, CheckFlag do
 end
 
 local ScreenGui = Create("ScreenGui", CoreGui, {
-  Name = "rael hub with redz library",
+  Name = "naruto hub with redz library",
 }, {
   Create("UIScale", {
     Scale = UIScale,
@@ -559,7 +559,7 @@ function redzlib:SetTheme(NewTheme)
   if not VerifyTheme(NewTheme) then return end
   
   redzlib.Save.Theme = NewTheme
-  SaveJson("rael hub with redz library.json", redzlib.Save)
+  SaveJson("naruto hub with redz library.json", redzlib.Save)
   Theme = redzlib.Themes[NewTheme]
   
   Comnection:FireConnection("ThemeChanged", NewTheme)
@@ -588,7 +588,7 @@ function redzlib:SetScale(NewScale)
 end
 
 function redzlib:MakeWindow(Configs)
-  local WTitle = Configs[1] or Configs.Name or Configs.Title or "rael hub with redz library"
+  local WTitle = Configs[1] or Configs.Name or Configs.Title or "naruto hub with redz library"
   local WMiniText = Configs[2] or Configs.SubTitle or "by : redz9999"
   
   Settings.ScriptFile = Configs[3] or Configs.SaveFolder or false
@@ -729,13 +729,13 @@ function redzlib:MakeWindow(Configs)
   ConnectSave(ControlSize1, function()
     if not Minimized then
       redzlib.Save.UISize = {MainFrame.Size.X.Offset, MainFrame.Size.Y.Offset}
-      SaveJson("rael hub with redz library.json", redzlib.Save)
+      SaveJson("naruto hub with redz library.json", redzlib.Save)
     end
   end)
   
   ConnectSave(ControlSize2, function()
     redzlib.Save.TabSize = MainScroll.Size.X.Offset
-    SaveJson("rael hub with redz library.json", redzlib.Save)
+    SaveJson("naruto hub with redz library.json", redzlib.Save)
   end)
   
   local ButtonsFolder = Create("Folder", TopBar, {
